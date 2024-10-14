@@ -1,36 +1,36 @@
 {
   "expo": {
-    "name": "Exlogrn",
-    "slug": "Exlogrn",
-    "version": "2.0.0",
+    "name": "my-app",
+    "slug": "my-app",
+    "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/app.png",
-    "userInterfaceStyle": "light",
+    "icon": "./assets/images/icon.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/images/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true,
-      "infoPlist": {
-        "NSPhotoLibraryUsageDescription": "This app requires access to your photo library to upload files.",
-        "NSDocumentDirectoryUsageDescription": "This app requires access to your document directory."
-      }
+      "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/app.png",
+        "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      },
-      "permissions": [
-        "READ_EXTERNAL_STORAGE",
-        "WRITE_EXTERNAL_STORAGE"
-      ]
+      }
     },
     "web": {
-      "favicon": "./assets/app.png",
-      "jsEngine": "jsc"
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router"
+    ],
+    "experiments": {
+      "typedRoutes": true
     }
   }
 }
