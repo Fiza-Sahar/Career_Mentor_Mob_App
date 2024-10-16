@@ -11,7 +11,10 @@ import ResetPasswordScreen from "./app/screens/ResetPasswordScreen";
 import HomeScreen from "./app/screens/HomeScreen";
 import FeaturesScreen from "./app/screens/Features/FeaturesScreen";
 import ResumeUploadScreen from "./app/screens/Features/ResumeUploadScreen";
-import ResumeDetailsScreen from "./app/screens/Features/ResumeDetailsScreen"
+import ResumeDetailsScreen from "./app/screens/Features/ResumeDetailsScreen";
+import FormScreen from "./app/screens/Features/interviewpreparation/FormScreen";
+// import Form from "./app/screens/Features/interviewpreparation/Form";
+//import Form from "./app/screens/Features/interviewpreparation/Form";
 const Stack = createStackNavigator();
 
 export default function App() {
@@ -29,6 +32,9 @@ export default function App() {
           <Stack.Screen name="FeaturesScreen" component={FeaturesScreen} />
           <Stack.Screen name="ResumeUploadScreen" component={ResumeUploadScreen} />
           <Stack.Screen name="ResumeDetailsScreen" component={ResumeDetailsScreen} />
+          {/* <Stack.Screen name="Form" component={Form} /> */}
+          
+          <Stack.Screen name="FormScreen" component={FormScreen} />
           <Stack.Screen name="ResetPasswordScreen" component={ResetPasswordScreen} />
         </Stack.Navigator>
       </NavigationContainer>

@@ -4,6 +4,8 @@ import Button from "../../components/Button"; // Assuming this is your custom Bu
 import BackButton from "../../components/BackButton";
 import { useNavigation } from "@react-navigation/native";
 
+
+
 export default function FeaturesScreen() {
   const navigation = useNavigation();
   const [selectedCategories, setSelectedCategories] = useState([]);
@@ -74,28 +76,30 @@ export default function FeaturesScreen() {
           </Button>
         </TouchableOpacity>
 
-        {/* InterviewPreparation Category */}
-        <TouchableOpacity
-          style={[
-            styles.categoryItem,
-            selectedCategories.includes("InterviewPreparation") && styles.selectedCategory,
-          ]}
-          onPress={() => toggleCategory("InterviewPreparation")}
-        >
-          <Image
-            source={require("../../../assets/items/InterviewPreparation.jpg")} // Correct image path
-            style={styles.icon}
-          />
-          <Text style={styles.subtitle}>Interview Preparation</Text>
-          <Button
-            mode="contained"
-            onPress={() => navigation.navigate("InterviewPreparation")}
-            style={styles.button}
-            textColor="#fff"
-          >
-            Get Started
-          </Button>
-        </TouchableOpacity>
+    
+<TouchableOpacity
+  style={[
+    styles.categoryItem,
+    selectedCategories.includes("InterviewPreparation") && styles.selectedCategory,
+  ]}
+  onPress={() => toggleCategory("InterviewPreparation")}
+>
+  <Image
+    source={require("../../../assets/items/InterviewPreparation.jpg")} // Correct image path
+    style={styles.icon}
+  />
+  <Text style={styles.subtitle}>Interview Preparation</Text>
+  <Button
+    mode="contained"
+    onPress={() => navigation.navigate("FormScreen")}  // Navigate to InterviewPreparationScreen
+    style={styles.button}
+    textColor="#fff"
+  >
+    Get Started
+  </Button>
+</TouchableOpacity>
+
+
 
         {/* JobFinding Category */}
         <TouchableOpacity

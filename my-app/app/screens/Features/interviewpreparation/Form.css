@@ -1,0 +1,139 @@
+/* Form.css */
+
+/* General App Container */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white; /* White background for the screen */
+  }
+  
+  .app-container {
+    display: flex;
+    justify-content: center; /* Horizontally centers */
+    align-items: center; /* Vertically centers */
+    height: 100vh; /* Full viewport height */
+  }
+  
+  /* Centered Form Styling */
+  .form-container {
+    background-color: #f0f0f0; /* Lighter gray background for the form */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px; /* Maximum width of form */
+    border: 1px solid #ddd;
+  }
+  
+  .form-container h2 {
+    font-weight: bold; /* Ensure it is bold */
+    color: #333; /* Set text color */
+    margin-bottom: 20px; /* Spacing below the heading */
+    text-align: left; /* Align text to the left */
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold; /* Labels should be bold */
+    color: #333;
+  }
+  
+  input[type="text"],
+  select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: normal; /* Ensure text in fields is not bold */
+  }
+  .button {
+    background-color: #007bff; /* Blue background color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 25px; /* Increased for more rounded corners */
+    padding: 10px 20px; /* Adjusts the padding (top/bottom and left/right) */
+    width: auto; /* Change to auto for dynamic width */
+    cursor: pointer; /* Changes the cursor to pointer on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  
+  button, input:where([type='button']), input:where([type='reset']), input:where([type='submit']) {
+    background-color: blue;
+    background-image: none;
+  }
+  .error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .form-container {
+        padding: 20px;
+        margin: 10px;
+    }
+  
+    button {
+        margin: 10px 0;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .form-container {
+        padding: 15px;
+        margin: 5px;
+    }
+  
+    input[type="text"],
+    select {
+        font-size: 14px;
+        padding: 8px;
+    }
+  
+    button {
+        font-size: 14px;
+        padding: 10px 16px;
+    }
+  }
+  
+  .answer-text,
+  textarea,
+  input[type="text"] {
+    font-weight: normal; /* Ensures the answer text is not bold */
+  }
+  
+  /* Textarea Styling */
+  textarea {
+    resize: vertical;
+    width: 100%; /* Changed width to 100% to match other inputs */
+    height: 100px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-family: Arial, sans-serif;
+  }
+  
+  .circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #007bff; /* Blue border */
+    background-color: transparent; /* Transparent fill */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #007bff; /* Change text color to match the border */
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  
+  
